@@ -122,4 +122,33 @@ class ProductController extends Controller
         $product = Product::find($id);
         $product->delete();
     }
+
+    public function apiIndex()
+    {
+        return Product::all();
+    }
+
+    public function apiShow($id)
+    {
+        return Product::find($id);
+    }
+
+    public function apiStore(Request $request)
+    {
+        return Product::create($request->all());
+    }
+
+    public function apiUpdate(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+        $product->update($request->all());
+
+        return $product;
+    }
+
+    public function apiDelete(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+        $product->delete();
+    }
 }
