@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->timestamps();
             $table->softDeletes();
             $table->string('name');
-            $table->string('description');
+            $table->text('description');
             $table->float('original_price');
             $table->float('promotional_price')
                 ->nullable();
