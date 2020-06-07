@@ -25,4 +25,4 @@ Segue abaixo a lista das rotas disponíveis da API
 - PUT /api/products/{id} (Para edição dos dados do produto informado)
 - DELETE /api/products/{id} (Para exclusão de um produto)
 
-* Onde é exibido {id} trocar pelo id do produto desejado.
+Onde é exibido {id} trocar pelo id do produto desejado.
