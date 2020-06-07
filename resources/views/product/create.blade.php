@@ -21,6 +21,7 @@
                     name="name"
                     class="form-control"
                     placeholder="Name"
+                    maxlength="150"
                     required>
             </div>
         </div>
@@ -33,6 +34,7 @@
                     name="description"
                     class="form-control"
                     placeholder="Description"
+                    maxlength="500"
                     required>
             </div>
         </div>

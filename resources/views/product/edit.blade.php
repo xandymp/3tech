@@ -31,6 +31,7 @@
                     value="{{ $product->name }}"
                     class="form-control"
                     placeholder="Name"
+                    maxlength="150"
                     required>
             </div>
         </div>
@@ -44,6 +45,7 @@
                     value="{{ $product->description }}"
                     class="form-control"
                     placeholder="Description"
+                    maxlength="500"
                     required>
             </div>
         </div>
